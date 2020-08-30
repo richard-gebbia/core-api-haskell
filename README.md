@@ -169,7 +169,7 @@ On the other side of the coin, we have `OutPlace`s, which are `Contravariant`
 and can therefore not be made an instance of `Applicative` to use the same
 builder pattern as with `InPlace`s. Instead we have `spread`, which takes a list
 of ways to put a "big" (read: user-defined) structure into a "small" 
-(read: built-in) `OutPlace` and creates one new `OutPlace` that writes one "big"
+(read: built-in) `OutPlace`, and then it creates a new `OutPlace` that writes a "big"
 structure in all of the provided, "small" ways. If that doesn't make any sense 
 and you now think I'm on some kind of heavy medication, here's the type and 
 example usage.
