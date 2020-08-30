@@ -173,18 +173,18 @@ example usage.
 With this "big" structure:
 
 ```haskell
-data JimmyBuffett = JimmyBuffett
-    { jimmy :: Jimmy
-    , buffett :: Buffett
+data Tee = Tee
+    { teeFile :: File
+    , teeStdout :: Stdout
     }
 ```
 
-you can make an `OutPlace JimmyBuffett` with the following:
+you can make an `OutPlace Tee` with the following:
 
 ```haskell
 spread
-    [ jimmy >$< margaritaville      -- margaritaville :: OutPlace Jimmy
-    , buffett >$< paradise          -- paradise :: OutPlace Buffett
+    [ teeFile >$< fileNamed "foo.txt" -- fileNamed "foo.txt" :: OutPlace File
+    , teeStdout >$< stdout            -- stdout :: OutPlace Stdout
     ]
 ```
 
@@ -253,6 +253,6 @@ Here are some other things I'd like to get done:
 
 ## License
 
-Copyright © 2016 Richard Gebbia
+Copyright © 2020 Richard Gebbia
 
 Distributed under the BSD3 license.
