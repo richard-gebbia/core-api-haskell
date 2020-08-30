@@ -132,6 +132,8 @@ that I actually want to read data from more than one place.
 The *Place API* exists to do just that. It contains two types: `InPlace` and 
 `OutPlace`.
 
+### `InPlace`s
+
 `InPlace`s are instances of `Applicative`, so you can build "bigger" (or "more
 abstract") `InPlace`s using the standard `Applicative` builder pattern.
 
@@ -160,6 +162,8 @@ timeAndMousePos = TimeAndMousePos
     <$> currentTimePlace
     <*> mousePosPlace
 ```
+
+### `OutPlace`s
 
 On the other side of the coin, we have `OutPlace`s, which are `Contravariant`
 and can therefore not be made an instance of `Applicative` to use the same
