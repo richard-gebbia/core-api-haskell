@@ -67,7 +67,7 @@ following signature:
   subscribed to.
 - **event**: This is the event to subscribe to. An event is similar 
   to the concept from event-driven OOP, except that it *only* exists to 
-  represent *points in time*, so it cannot "carry" any data with it.
+  represent *a point in time*, so it cannot "carry" any data with it.
 - **xform**: This is a function that gets called when the event specified by
   `event` occurs. A the time of the `event`, a value of type `a` will be read
   from the given `inPlace`, and that `a` will be given to `xform`. The result of
