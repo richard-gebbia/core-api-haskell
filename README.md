@@ -238,10 +238,6 @@ are likely parts that are confusing or overly complicated. Please feel free to
 tell/ask me about anything in the repo and/or README. I would sincerely 
 appreciate suggestions.
 
-To Haskellers, I apologize if my coding style or misuse/underuse of Haskell 
-features disgusts you. I am vastly inexperienced with the language. Please let
-me know how I can improve.
-
 This repo is primarily here as an idea. It is in no way production-ready, mainly
 because I haven't filled out any real context to use. The events and places I
 use in the repo were created out of necessity to build the example code. If I
